@@ -4,4 +4,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - .:/usr/share/nginx/html
+      - nginx_data:/usr/share/nginx/html
+
+volumes:
+  nginx_data:
